@@ -28,114 +28,114 @@
         bootstrap
     </h2>
     <div class="container-fluid">
-        <!-- fluid occupies the full space of the window -->
+        
+        <div class="table-responsive">
+            <!-- table-responsive helps us to make table with big cells responsive to window size -->
 
-        <!-- container-md goona give 100% width below the medium size window as of our original html without css-->
+            <table class="table table-light table-sm">
+                <!-- added class of table in bootstrap which make our table presentable and add css to it  -->
+                <!-- table-primary will give us the table in blue color -->
+                <!-- table-danger will give us the table in red color -->
+                <!-- table-secondary will give us grey color -->
+                <!-- table-success will give us green color -->
+                <!-- table-warning will give us yellow color -->
+                <!-- table-info will give us blueish green color -->
+                <!-- table-light will give us light color -->
+                <!-- table-dark will give us black color -->
+    
+                <!-- not only in table but we can use the above class in each element of our table  -->
+    
+    
+    
+    
+    
+                <thead>
+                    
+                    <tr class="table-dark">
+                        <th>NAME </th>
+                        <th>AGE </th>
+                        <th>SEX </th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody>
+    
+                    <tr>
+                        <td class="table-info">Himanshu</td>
+                        <td class="table-secondary">22</td>
+                        <td class="table-warning">male</td>
+                    </tr>
+    
+                    <tr>
+                        <td class="table-info">Suman</td>
+                        <td class="table-secondary">18</td>
+                        <td class="table-warning">male</td>
+                    </tr>
+    
+                    <tr>
+                        <td class="table-info">Nandani</td>
+                        <td class="table-secondary">12</td>
+                        <td class="table-warning">female</td>
+                    </tr>
+    
+                </tbody>
+            </table>
+    
+            <table class="table table-hover table-bordered table-striped-columns table-sm">
+                <!-- table-stripped class will be differentiating rows with light and dark grey -->
+                <!-- table-stripped-columns class will be differentiating columns with light and dark grey -->
+                <!-- table-hover will be hovering through each row of our table -->
+                <!-- table-boedered will give a table with borders -->
+    
+    
+    
+    
+    
+    
+                <thead class="table-group-divider">
 
-        <div class="row row-cols-2 row-cols-lg-5 g-2">
+                    <!-- table-group-divider puts a divider between our header and the body of the table
+                    table divider is the class that only can be inserted in body and head of our table -->
+    
+    
+                    <tr>
+                        <th>NAME </th>
+                        <th>AGE </th>
+                        <th>SEX </th>
+                    </tr>
+    
+                </thead>
+    
+                <tbody class="table-group-divider">
+    
+                    <tr class="table-active table-success">
+                        <!-- table active is gonna give us the row which we want to make an active row with dark grey color -->
+                        <td>Himanshu</td>
+                        <td>22</td>
+                        <td>male</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Suman</td>
+                        <td>18</td>
+                        <td>male</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Nandani</td>
+                        <td>12</td>
+                        <td>female</td>
+                    </tr>
+    
+                </tbody>
+            </table>
 
-            <!-- row-col-2 will give us 2 col every single rows -->
-            <!-- row-col-lg-5 will give us 5 col every row till the large screen size after that it will be giving us the 2 col per row-->
-            <!-- gy here will insert the gap  vertically between each col and row max gy-5,min gy-0 -->
-            <!-- gx will insert the gap horizontally -->
-            <!-- g will insert the gap in bot x and y axis  -->
-            <!-- we can use break points also in the gap ex:-gy-md-2 -->
-
-            <!-- it is a row indside our container -->
-            <!-- inside the row we r gonna create column -->
-
-            <div class="col-md-5 col-2">
-
-                <!-- we can create nested rows also like we do here  -->
-
-                <div class="row ">
-
-                    <div class="col">
-
-                        <div class="box">
-
-                            <!-- note:-everything should come after container then roe and then col and then all the nested rows and other stuff -->
-
-                        </div>
-
-                    </div>
-
-                    <div class="col">
-
-                        <div class="box"></div>
-
-                    </div>
-
-                </div>
-
-                <!-- brekpoints after window reaches medium size then below medium size our col will be of 2 cols width only -->
-
-                <!-- note:-if we dont assign the values for smaller window size like here we did col:-2 ,it is gonna take 100% width of the col size that is 12cols and our next col will be thrown to the next line -->
-
-
-                <div class="box">
-
-
-                    <p>
-                        <!-- it is just a css framework,it provides a bunch of css classes for our use so that our webpage could look stylish,it gives us different built in styling component which make our work easier -->
-
-
-
-                        <!-- it gives us the styling classes inthree way grid system 
-                                 :- container classes
-                                 :-rows classes
-                                 :-column class -->
-
-
-
-
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="col-4">
-
-                <!-- here offset basically setting the 3 col space for our second column and then it is placing our second col to the window -->
-
-                <!-- col only has 12 cols in total ,if we assign more than that the second col is gonna shift into another line -->
-
-                <div class="box">
-
-                    <!-- bootstrap actually created some media brekpoints which make it able to set the components of our webpage according to our window size . -->
-
-                    <!-- breakpoints are 
-                    1:-xxl
-                    2:-xl 
-                    3:-md 
-                    4:s and so on -->
-
-                    <!-- our larger breakpoints always gonna overwrite our smaller breakpoints -->
-
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="box">
-
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="box">
-
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="box">
-
-                </div>
-            </div>
         </div>
+       
 
-    </div>
 
+</div>           
 </body>
 
 </html>
