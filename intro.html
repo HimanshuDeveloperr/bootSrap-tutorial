@@ -29,41 +29,13 @@
     </h2>
     <div class="container">
         
-        <button class="btn btn-outline-primary btn-lg " data-bs-toggle="button" >submit</button>
-        <a class="btn btn-primary" href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">link</a>
+       <div class="alert alert-info alert-dismissible" role="alert">alert
+        <button class=" btn-close" aria-label="close" data-bs-dismiss="alert">X</button>
+       </div>
 
-
-        <!-- through btn class we can do many things in button with the bootstrap -->
-        <!-- we can change our button to look like a link using btn-link class in bootstrap -->
-        <!-- we can change our button into an outline version by simply putting a class of btn-outline-secondary and other colors. -->
-        <!-- we can disabled our buttons through disabled attribute -->
-        <!-- we can even toggle our buttons from active state to deactive state using data-bs-toggle="element name" -->
-        <!-- note:-other elements also support data-bs-toggle atrribute -->
-
-
-        <!-- creating a button group just like we did in input-group -->
-
-        <div class="btn-group">
-
-            <button class="btn btn-outline-primary btn-lg">1</button>
-            <button class="btn btn-outline-dark btn-lg">2</button>
-
-            <button class="btn btn-outline-success btn-lg">3</button>
-
-            <button class="btn btn-outline-info btn-lg">4</button>
-
-        </div>
-
-        <div class="btn-group-vertical">
-
-            <button class="btn btn-outline-primary btn-lg">1</button>
-            <button class="btn btn-outline-dark btn-lg">2</button>
-
-            <button class="btn btn-outline-success btn-lg">3</button>
-
-            <button class="btn btn-outline-info btn-lg">4</button>
-
-        </div>
+       <!-- creating an alert button then giving it a role to alert and adding a closed button to close the alert 
+    by giving it alert-dismissible and btn-close -->
+    <!-- and tell the bootstrap to close the alert button through data-bs-dismiss -->
 
        
 
