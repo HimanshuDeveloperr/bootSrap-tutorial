@@ -39,12 +39,17 @@
                 <input type="email" class="form-control" placeholder="type name" id="username" required>
                 <label for="username" class="form-label">email:</label>
 
-                <button>submit</button>
+                <!-- add a invalid feedback if it is invalid  with the bootstrap class invalid-feedback-->
 
+                <div class="invalid-feedback"> is invalid</div>
+                <div class="valid-feedback">thanks for submitting</div>
+
+                
                 <!-- to make a floating id we had an bootstrap class called form-floating through which we create a div class which is basically beneathe our form and in that div class we write our input first with the required bootstrap classes in it and then label after it -->
                 <!-- note:-placeholders are a must if u r ceating a floating id -->
-
+                
             </div> 
+            <button>submit</button>
             
         
 
