@@ -30,24 +30,45 @@
     <div class="container">
         
 
-        <form>
+        <form novalidate>
+            <!-- add a no validate attribute to validate our form -->
 
             <!-- creating a floating id -->
             <div class="form-floating">
               
-                <input type="text" class="form-control" placeholder="type name" id="username">
-                <label for="username" class="form-label">fullname:</label>
+                <input type="email" class="form-control" placeholder="type name" id="username" required>
+                <label for="username" class="form-label">email:</label>
+
+                <button>submit</button>
 
                 <!-- to make a floating id we had an bootstrap class called form-floating through which we create a div class which is basically beneathe our form and in that div class we write our input first with the required bootstrap classes in it and then label after it -->
                 <!-- note:-placeholders are a must if u r ceating a floating id -->
 
-            </div>         
+            </div> 
+            
+        
 
         </form>
+
        
 
 
 </div>           
+        <script>
+            const form=document.querySelector('form')
+
+            form.addEventListener('submit',checking)
+            function checking(e)
+            {
+                if(!form.checkValidity())// checking if it is validated or not
+                {
+                    
+                    e.preventDefault() // it is going to prevent us from submitting
+                }
+
+                form.classList.add('was-validated')// will add a class of was-validate if the form is validated
+            }
+        </script>
 </body>
 
 </html>
