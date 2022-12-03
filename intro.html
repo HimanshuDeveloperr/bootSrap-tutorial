@@ -32,22 +32,19 @@
 
         <form>
 
-        <!-- creating an input group -->
-        <label for="username" class="form-label">NAME:-</label>
-        <div class="input-group">
-            <div class="input-group-text">first</div>
-            <input type="text" id="username" class="form-control">
-            <div class="input-group-text">last</div>
+            <!-- creating a floating id -->
+            <div class="form-floating">
+              
+                <input type="text" class="form-control" placeholder="type name" id="username">
+                <label for="username" class="form-label">fullname:</label>
 
-            <input type="text" id="username" class="form-control">
+                <!-- to make a floating id we had an bootstrap class called form-floating through which we create a div class which is basically beneathe our form and in that div class we write our input first with the required bootstrap classes in it and then label after it -->
+                <!-- note:-placeholders are a must if u r ceating a floating id -->
 
-            <!-- this input group will be putting our two inputs in the same area divinding it by a vertical line -->
-        </div>
+            </div>         
 
-            <button>submit</button>
         </form>
        
-        <!-- we also has an amazing input-group-text class which writes the text inside of our input seperating it with a darker color can be used as sub label like i use in this case -->
 
 
 </div>           
