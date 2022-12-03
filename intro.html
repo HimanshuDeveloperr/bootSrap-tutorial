@@ -32,54 +32,22 @@
 
         <form>
 
-            <label for="mail" class="form-label">email:-</label>
+        <!-- creating an input group -->
+        <label for="username" class="form-label">NAME:-</label>
+        <div class="input-group">
+            <div class="input-group-text">first</div>
+            <input type="text" id="username" class="form-control">
+            <div class="input-group-text">last</div>
 
-            <!-- form-label will give the css to our label using bootstrap -->
+            <input type="text" id="username" class="form-control">
 
-            <input type="email" name="useremail" id="mail"  disabled class="form-control">
-
-            <label for="mail" class="form-label">email:-</label>
-
-
-            <input type="email" name="useremail" id="mail" value="me@gmail.com" readonly class="form-control form-control-plaintext">
-
-            <label for="rangeform" class="form-label">range</label>
-            <input type="range" name="ruserrange" id="rangeform" class="form-range">
-
-            <label for="vechiles" class="form-label"> select</label>
-            <select name="cars" id="vechiles" class="form-select">
-                <option value="volvo">volvo</option>
-                <option value="gmc">gmc</option>
-            </select>
-
-            <div class="form-check form-switch form-check-inline">
-
-                <input type="checkbox" class="form-check-input" id="check">
-                <label for="check" class="form-check-label">i agree</label>
-            </div>
-
-            <div class="form-check form-switch form-check-inline">
-
-                <input type="checkbox" class="form-check-input" id="check">
-                <label for="check" class="form-check-label">i disagree</label>
-            </div>
-
-            
-
-            <!-- form-control will give the css to our input -->
-            <!-- we also had a disabled class in bootstrap -->
-            <!-- we also had read only class in bootstrap for forms input -->
-            <!-- and we had form-control-plaintext class to show our readonly attribute as plain text -->
-            <!-- we also has a form-range class which will be showing us the range pattern with the bootstrap css 
-            note:-dont use form-control while using form-range -->
-            <!-- we had form-select class to give css to our selection in form -->
-            <!-- it also gives us the form-check-input to style our checkbox in our forms with the form-check-label to style the label of our form checkbox which comes afterneath the input checkbox -->
-            <!-- we also had a form-switch class in our form-check class of our div witch changes the check in the form of switch button -->
-            <!-- form-check-inline will place the two checkboxes beside each other rather than on top of each other -->
+            <!-- this input group will be putting our two inputs in the same area divinding it by a vertical line -->
+        </div>
 
             <button>submit</button>
         </form>
        
+        <!-- we also has an amazing input-group-text class which writes the text inside of our input seperating it with a darker color can be used as sub label like i use in this case -->
 
 
 </div>           
