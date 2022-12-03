@@ -27,111 +27,58 @@
     <h2>
         bootstrap
     </h2>
-    <div class="container-fluid">
+    <div class="container">
         
-        <div class="table-responsive">
-            <!-- table-responsive helps us to make table with big cells responsive to window size -->
 
-            <table class="table table-light table-sm">
-                <!-- added class of table in bootstrap which make our table presentable and add css to it  -->
-                <!-- table-primary will give us the table in blue color -->
-                <!-- table-danger will give us the table in red color -->
-                <!-- table-secondary will give us grey color -->
-                <!-- table-success will give us green color -->
-                <!-- table-warning will give us yellow color -->
-                <!-- table-info will give us blueish green color -->
-                <!-- table-light will give us light color -->
-                <!-- table-dark will give us black color -->
-    
-                <!-- not only in table but we can use the above class in each element of our table  -->
-    
-    
-    
-    
-    
-                <thead>
-                    
-                    <tr class="table-dark">
-                        <th>NAME </th>
-                        <th>AGE </th>
-                        <th>SEX </th>
-                    </tr>
-    
-                </thead>
-    
-                <tbody>
-    
-                    <tr>
-                        <td class="table-info">Himanshu</td>
-                        <td class="table-secondary">22</td>
-                        <td class="table-warning">male</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="table-info">Suman</td>
-                        <td class="table-secondary">18</td>
-                        <td class="table-warning">male</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="table-info">Nandani</td>
-                        <td class="table-secondary">12</td>
-                        <td class="table-warning">female</td>
-                    </tr>
-    
-                </tbody>
-            </table>
-    
-            <table class="table table-hover table-bordered table-striped-columns table-sm">
-                <!-- table-stripped class will be differentiating rows with light and dark grey -->
-                <!-- table-stripped-columns class will be differentiating columns with light and dark grey -->
-                <!-- table-hover will be hovering through each row of our table -->
-                <!-- table-boedered will give a table with borders -->
-    
-    
-    
-    
-    
-    
-                <thead class="table-group-divider">
+        <form>
 
-                    <!-- table-group-divider puts a divider between our header and the body of the table
-                    table divider is the class that only can be inserted in body and head of our table -->
-    
-    
-                    <tr>
-                        <th>NAME </th>
-                        <th>AGE </th>
-                        <th>SEX </th>
-                    </tr>
-    
-                </thead>
-    
-                <tbody class="table-group-divider">
-    
-                    <tr class="table-active table-success">
-                        <!-- table active is gonna give us the row which we want to make an active row with dark grey color -->
-                        <td>Himanshu</td>
-                        <td>22</td>
-                        <td>male</td>
-                    </tr>
-    
-                    <tr>
-                        <td>Suman</td>
-                        <td>18</td>
-                        <td>male</td>
-                    </tr>
-    
-                    <tr>
-                        <td>Nandani</td>
-                        <td>12</td>
-                        <td>female</td>
-                    </tr>
-    
-                </tbody>
-            </table>
+            <label for="mail" class="form-label">email:-</label>
 
-        </div>
+            <!-- form-label will give the css to our label using bootstrap -->
+
+            <input type="email" name="useremail" id="mail"  disabled class="form-control">
+
+            <label for="mail" class="form-label">email:-</label>
+
+
+            <input type="email" name="useremail" id="mail" value="me@gmail.com" readonly class="form-control form-control-plaintext">
+
+            <label for="rangeform" class="form-label">range</label>
+            <input type="range" name="ruserrange" id="rangeform" class="form-range">
+
+            <label for="vechiles" class="form-label"> select</label>
+            <select name="cars" id="vechiles" class="form-select">
+                <option value="volvo">volvo</option>
+                <option value="gmc">gmc</option>
+            </select>
+
+            <div class="form-check form-switch form-check-inline">
+
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="form-check-label">i agree</label>
+            </div>
+
+            <div class="form-check form-switch form-check-inline">
+
+                <input type="checkbox" class="form-check-input" id="check">
+                <label for="check" class="form-check-label">i disagree</label>
+            </div>
+
+            
+
+            <!-- form-control will give the css to our input -->
+            <!-- we also had a disabled class in bootstrap -->
+            <!-- we also had read only class in bootstrap for forms input -->
+            <!-- and we had form-control-plaintext class to show our readonly attribute as plain text -->
+            <!-- we also has a form-range class which will be showing us the range pattern with the bootstrap css 
+            note:-dont use form-control while using form-range -->
+            <!-- we had form-select class to give css to our selection in form -->
+            <!-- it also gives us the form-check-input to style our checkbox in our forms with the form-check-label to style the label of our form checkbox which comes afterneath the input checkbox -->
+            <!-- we also had a form-switch class in our form-check class of our div witch changes the check in the form of switch button -->
+            <!-- form-check-inline will place the two checkboxes beside each other rather than on top of each other -->
+
+            <button>submit</button>
+        </form>
        
 
 
