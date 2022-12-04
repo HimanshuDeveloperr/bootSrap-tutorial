@@ -28,71 +28,23 @@
         bootstrap
     </h2>
     <div class="container">
+     
 
-        <!-- creating an opening button to open our model  -->
+        <!-- when we click on the button i want to the text to show and hide ,i want to collapse the row  -->
+        <!-- aria-controls tells the system that our row is controlled by our button  -->
+        <!-- aria-expanded is for screen readers if it is expanded it will be true or else it will be false -->
+        
 
-        <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal">
+        <button class="btn btn-info" data-bs-toggle="collapse " data-bs-target="#row" aria-controls="row" aria-expanded="false">toggle</button>
 
-            <!-- data-bs-toggle will toggle the modal after we click on ur open button -->
-
-            <!-- data-bs-target will target the modal after we click on ur open button and open the modal -->
-
-
-            open
-
-        </button>
-
-        <!-- similar to our cards we had a class called modal in bootstrap -->
-
-        <div class="modal fade" id="modal">
-
-            <!-- inside of our modal we have modal-dialog -->
-
-            <div class="modal-dialog modal-dialog-centered">
-
-                <!-- inside it we had modal-content -->
-
-                <div class="modal-content">
-
-                    <div class="modal-header">
-
-                        <h1>
-                            header
-
-                        </h1>
-
-                        <!-- always put a close button in our header which closes our modal -->
-
-                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal"></button>
-                        
-
-
+            <div class="row collapse " id="row">
+                <div class="col">
+                    <div class="box">
+                      it is not important but u should know about it
                     </div>
-                    <div class="modal-body">body
-                        
-                        it will get open after we click the open button at the top of our modal class
-                    </div>
-                    <div class="modal-footer">footer</div>
-
-
                 </div>
-
-
             </div>
 
-
-        </div>
-
-
-
-    </div>
-
-
-    <!-- fade class in modal will fade the background making our modal highlighted -->
-    <!-- we also had similar to our card a modal-header,modal-body,modal-footer -->
-    <!-- to get our modal-dialog in the center we had a modal-dialog-center -->
- <!-- in case we have a modal with a numerous amount in it we can give it a scroll bar using modal-dialog-scrollable-->
- <!-- for our modal to occupy the whole screen we had an class called modal-fullscreen   in modal-dialog-->
     </div>
 
 </body>
