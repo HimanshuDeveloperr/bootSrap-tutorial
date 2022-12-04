@@ -27,25 +27,52 @@
     <h2>
         bootstrap
     </h2>
-    <div class="container">
-     
+    <!-- creating nav bars really imp-->
 
-        <!-- when we click on the button i want to the text to show and hide ,i want to collapse the row  -->
-        <!-- aria-controls tells the system that our row is controlled by our button  -->
-        <!-- aria-expanded is for screen readers if it is expanded it will be true or else it will be false -->
-        
+    <nav class="navbar navbar-expand-xl navbar-dark bg-black">
 
-        <button class="btn btn-info" data-bs-toggle="collapse " data-bs-target="#row" aria-controls="row" aria-expanded="false">toggle</button>
+        <div class="container">
 
-            <div class="row collapse " id="row">
-                <div class="col">
-                    <div class="box">
-                      it is not important but u should know about it
-                    </div>
-                </div>
-            </div>
 
-    </div>
+            <!-- for logo in rhs of our navbar class navbar-brand -->
+
+          <a href="#" class="navbar-brand">brand</a>
+
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+            <!-- creating button which will give collapse effect to our nav links -->
+            
+            <span class="navbar-toggler-icon"></span>
+            <!-- for our toggler icon  -->
+
+          </button>
+
+             <!-- creating a toggle/collapse for numerous links in our nav bar using navbar-collapse,collapse class -->
+
+
+             <div class="collapse navbar-collapse" id="nav">
+                 
+                 <ul class="navbar-nav">
+       
+                   <!-- for other links create a ul with navbar-nav class -->
+       
+                   <!-- and li with nav-item class -->
+                   <!-- then added a link with nav-link class -->
+       
+                     <li class="nav-item"><a href="#" class="nav-link active">home</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link" disabled>store</a></li>
+                     <li class="nav-item"><a href="#" class="nav-link">about us</a></li>
+                     
+                 </ul>
+             </div>
+          <!-- <div class="navbar-text">text</div> -->
+
+          <!-- navbar-text used to add text in our navbar -->
+        </div>
+
+
+    </nav>
+
+    <!-- after creating our nav bar we will create our div container and move with other elements of our body -->
 
 </body>
 
