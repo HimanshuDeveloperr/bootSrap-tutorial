@@ -29,57 +29,55 @@
     </h2>
     <div class="container">
 
-        <div class="card-group">
+        <!-- creating an opening button to open our model  -->
+
+        <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal">
+
+            <!-- data-bs-toggle will toggle the modal after we click on ur open button -->
+
+            <!-- data-bs-target will target the modal after we click on ur open button and open the modal -->
 
 
-            <div class="card" style="width: 300px;">
+            open
 
-                <div class="card-header">header</div>
-                <div class="card-body">
-                    <div class="card-title">
+        </button>
+
+        <!-- similar to our cards we had a class called modal in bootstrap -->
+
+        <div class="modal fade" id="modal">
+
+            <!-- inside of our modal we have modal-dialog -->
+
+            <div class="modal-dialog modal-dialog-centered">
+
+                <!-- inside it we had modal-content -->
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h1>
+                            header
+
+                        </h1>
+
+                        <!-- always put a close button in our header which closes our modal -->
+
+                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal"></button>
+                        
+
 
                     </div>
-                    <div class="card-subtitle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur aliquid consequuntur
-                        laborum sequi. Soluta, provident est. Officiis soluta labore suscipit nam, aperiam eaque
-                        accusantium vero vitae, exercitationem nesciunt explicabo.
-
+                    <div class="modal-body">body
+                        
+                        it will get open after we click the open button at the top of our modal class
                     </div>
-                </div>
-                <div class="card-footer">footer</div>
-            </div>
+                    <div class="modal-footer">footer</div>
 
 
-            <div class="card" style="width: 300px;; background-color: black;">
-                <div class="card-header">
-                    <h3>a white swan</h3>
                 </div>
 
-                <!-- card-header used to add header in our card -->
 
-                <img src="bg2.jpg" alt="error" class="card-img-top" style="width: 50%;">
-
-                <!-- it is just like a html file with it body as class-body where we can write our paras and the bootstraop will give our paras or anything its styling -->
-                <!-- we can even overlay our image in our text using card-img-overlay class -->
-
-                <div class="card-body">
-
-                    <h2 class="card-title">swan</h2>
-
-                    <h4 class="card-subtitle">how beautiful and mesmerizing.</h4>
-
-                    if we write here it is goona be styled by the bootstrap
-
-                    <ul>
-
-                        <li>it is white in colour</li>
-                        <li>it gives positive vibes to me</li>
-                        <li>just suits with the black background</li>
-
-                    </ul>
-
-                </div>
-                <div class="card-footer">that's it</div>
             </div>
 
 
@@ -87,7 +85,14 @@
 
 
 
+    </div>
 
+
+    <!-- fade class in modal will fade the background making our modal highlighted -->
+    <!-- we also had similar to our card a modal-header,modal-body,modal-footer -->
+    <!-- to get our modal-dialog in the center we had a modal-dialog-center -->
+ <!-- in case we have a modal with a numerous amount in it we can give it a scroll bar using modal-dialog-scrollable-->
+ <!-- for our modal to occupy the whole screen we had an class called modal-fullscreen   in modal-dialog-->
     </div>
 
 </body>
